@@ -1,0 +1,226 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.water {
+    background-color: #6493EB;
+}
+
+.bordewater {
+    border-color: #6493EB;
+}
+
+.textwater {
+    color: #6493EB;
+}
+
+.fire {
+    background-color: #F57D31;
+}
+
+.bordefire {
+    border-color:  #F57D31;
+}
+
+.textfire {
+    color:  #F57D31;
+}
+
+.grass {
+    background-color: #74cb48;
+    
+}
+
+.bordegrass {
+    border-color: #74cb48;
+}
+
+.textgrass {
+    color: #74cb48;
+}
+
+.poison {
+    background-color: #A43E9E;
+}
+
+.bordepoison {
+    border-color: #A43E9E;
+}
+
+.textpoison {
+    color:#A43E9E;
+}
+
+.ghost {
+    background-color: #70559B;
+}
+
+.bordeghost {
+    border-color: #70559B;
+}
+
+.textghost {
+    color: #70559B;
+}
+
+.electric {
+    background-color: #F9CF30;
+}
+
+.bordeelectric {
+    border-color: #F9CF30;
+}
+
+.textelectric {
+    color: #F9CF30;
+}
+
+.bug {
+    background-color: #A7B723;
+}
+
+.bordebug {
+    border-color: #A7B723;
+}
+.textbug {
+   color: #A7B723;
+}
+
+.flying {
+   background-color: #A891EC;
+}
+
+.bordeflying {
+    border-color: #A891EC;
+}
+
+.textflying {
+    color: #A891EC;
+}
+
+.normal {
+    background-color: #AAA67F;
+}
+
+.bordenormal {
+    border-color: #AAA67F;
+}
+
+.textnormal {
+    color: #AAA67F;
+}
+
+.psychic {
+    background-color: #FB5584;
+}
+
+.bordepsychic {
+    border-color: #FB5584;
+}
+.textpsychic {
+    color:#FB5584;
+}
+.steel {
+    background-color: #B7B9D0;
+}
+
+.bordesteel {
+    border-color: #B7B9D0;
+}
+
+.textsteel {
+    color: #B7B9D0;
+}
+
+.rock {
+    background-color: #B69E31;
+}
+
+.borderock {
+    border-color: #B69E31;
+}
+
+.textrock {
+    color:  #B69E31;
+}
+
+.dark {
+    background-color: #75574C;
+}
+
+.bordedark {
+    border-color:  #75574C;
+}
+
+.textdark {
+   color: #75574C;
+}
+
+.ground {
+    background-color: #DEC16B;
+}
+
+.bordeground {
+    border-color: #DEC16B;
+}
+
+.textground {
+    color:  #DEC16B;
+}
+
+.dragon {
+    background-color: #7037FF;
+}
+
+.bordedragon {
+    border-color: #7037FF;
+}
+
+.textdragon {
+    color: #7037FF;
+}
+
+.fairy {
+    background-color: #E69EAC;
+}
+
+.bordefairy {
+    border-color: #E69EAC;
+}
+.textfairy {
+   color: #E69EAC;
+}
+
+.fighting {
+    background-color: #C12239;
+}
+
+.bordefighting {
+    border-color:  #C12239;
+}
+.textfighting {
+    color:  #C12239;
+}
+
+.ice {
+    background-color: #9AD6DF;
+}
+
+.bordeice {
+    border-color: #9AD6DF;
+
+}
+
+.textice {
+    color: #9AD6DF;
+}
+
+
+    
+
+body {
+  font-family: "Poppins";
+}
+
+
+
