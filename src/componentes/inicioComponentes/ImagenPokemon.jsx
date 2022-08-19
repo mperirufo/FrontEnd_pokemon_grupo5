@@ -1,7 +1,7 @@
 import React from 'react'
 
 const ImagenPokemon = ({img}) => {
-  console.log('img', img)
+
   return (
     <>
         <img

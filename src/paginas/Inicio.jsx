@@ -15,7 +15,9 @@ const Inicio = () => {
 
   useEffect(() => {
     setCargando(true)
+
     fetch('http://localhost:4000/pokemons/getallpokemons')
+
       .then((response) => response.json())
       .then((resultado) => {
         setAllPokemons(resultado) 
