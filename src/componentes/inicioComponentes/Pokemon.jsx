@@ -28,7 +28,7 @@ const Pokemon = ({tipo, name , img , id}) => {
 
       <div className={`w-full h-[25px]  flex items-center  justify-center text-white ${tipo} rounded-b-[5px]`}>
 
-          <h3 className='font-light capitalize'>{name}</h3>
+          <h3 className='font-light capitalize text-black'>{name}</h3>
           
       </div>
     </div>

@@ -27,7 +27,6 @@ const HeaderPokemon = ({pokemonType2, pokemonType, pokemonId, pokemonTypes, name
         className='opacity-5 static ml-[185px] h-[200px] w-[200px]'
         src={Pokeball} alt="" />
       </div>
-      
        {(pokemonId < 2) ? <Link  to={`/PaginaPokemon/${nextPokemon} `} >
           <i className="fa-solid flex  text-[25px] text-white mr-6 justify-end fa-arrow-right "></i>
           </Link>
@@ -43,7 +42,9 @@ const HeaderPokemon = ({pokemonType2, pokemonType, pokemonId, pokemonTypes, name
       
       <img 
       className='flex  top-[75px]  left-0 right-0 h-[250px] m-auto w-[250px] absolute'
-      src={selectedPokemonDetails.sprites && selectedPokemonDetails.sprites.other.dream_world.front_default} alt="" />
+      
+      src={selectedPokemonDetails.datos_pokemon?.imagen} />
+       
        <Carta
         pokemonType={pokemonType}
         pokemonType2={pokemonType2}

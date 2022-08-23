@@ -4,7 +4,11 @@ import './App.css';
 import Start from './paginas/Start'
 import Inicio from './paginas/Inicio'
 import PaginaPokemon from './paginas/PaginaPokemon'
+import PaginaLogin from './paginas/PaginaLogin';
 import "@fontsource/poppins";
+
+
+
 
 function App() {
 
@@ -28,8 +32,12 @@ function App() {
       <Route 
        path='/PaginaPokemon/:id'
        element={<PaginaPokemon
-       
        />}
+       />
+      <Route 
+      path='/PaginaLogin'
+      element={<PaginaLogin
+      />}
       />
     </Routes>
    </BrowserRouter>

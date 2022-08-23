@@ -16,22 +16,23 @@ const Fondo = ({id}) => {
   const [selectedPokemonSDEF, setSelectedPokemonSDEF] = useState("")
   const [selectedPokemonSPD, setSelectedPokemonSPD] = useState("")
   const [pokemonId, setPokemonId] = useState("")
+  const [selectedPokemonMoves, setSelectedPokemonMoves] = useState("")
 
 const getPokemonDetails = () => {
-  fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
+  fetch(`http://localhost:4000/pokemons/pokemon/${id}`)
   .then(res => res.json())
   .then((fetchedPokemon) => {
       setSelectedPokemonDetails(fetchedPokemon);
-      setPokemonType(fetchedPokemon.types[0].type.name)
-      setPokemonType2(fetchedPokemon.types[1]?.type.name)
-      setPokemonTypes(fetchedPokemon.types)
-      setSelectedPokemonHP(fetchedPokemon.stats[0].base_stat)
-      setSelectedPokemonATK(fetchedPokemon.stats[1].base_stat)
-      setSelectedPokemonDEF(fetchedPokemon.stats[2].base_stat)
-      setSelectedPokemonSATK(fetchedPokemon.stats[3].base_stat)
-      setSelectedPokemonSDEF(fetchedPokemon.stats[4].base_stat)
-      setSelectedPokemonSPD(fetchedPokemon.stats[5].base_stat)
+      setPokemonType(fetchedPokemon?.types[0]?.nombre)
+      setPokemonType2(fetchedPokemon.types.nombre)
+      setSelectedPokemonHP(fetchedPokemon.datos_pokemon.hp)
+      setSelectedPokemonATK(fetchedPokemon.datos_pokemon.atk)
+      setSelectedPokemonDEF(fetchedPokemon.datos_pokemon.def)
+      setSelectedPokemonSATK(fetchedPokemon.datos_pokemon.satk)
+      setSelectedPokemonSDEF(fetchedPokemon.datos_pokemon.sdef)
+      setSelectedPokemonSPD(fetchedPokemon.datos_pokemon.spd)
       setPokemonId(fetchedPokemon.id)
+      setSelectedPokemonMoves(fetchedPokemon?.moves?.nombre)
       
   })
   .catch ((error) => {
@@ -40,10 +41,10 @@ const getPokemonDetails = () => {
 }
 
 const getPokemonText = () => {
-  fetch(`https://pokeapi.co/api/v2/pokemon-species/${id}`)
+  fetch(`http://localhost:4000/pokemons/pokemon/${id}`)
   .then(res => res.json())
   .then((fetchedPokemon) => {
-  setSelectedPokemonText(fetchedPokemon.flavor_text_entries[5].flavor_text)
+  setSelectedPokemonText(fetchedPokemon.datos_pokemon.descripcion)
       
       
   })
@@ -59,13 +60,14 @@ useEffect(() => {
 } , [id]);
 
 console.log(pokemonId)
+console.log(selectedPokemonDetails)
 
   return (
     <>
       <div className="h-auto w-auto"> 
           
         <HeaderPokemon 
-        name={selectedPokemonDetails.name}
+        name={selectedPokemonDetails.nombre}
         pokemonTypes={pokemonTypes}
         pokemonType={pokemonType}
         pokemonType2={pokemonType2}
@@ -79,6 +81,7 @@ console.log(pokemonId)
         selectedPokemonSDEF={ selectedPokemonSDEF}
         selectedPokemonSPD={ selectedPokemonSPD}
         pokemonId={pokemonId}
+        selectedPokemonMoves={selectedPokemonMoves}
         />
 
        
