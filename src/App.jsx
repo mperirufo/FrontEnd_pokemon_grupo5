@@ -6,6 +6,8 @@ import Inicio from './paginas/Inicio'
 import PaginaPokemon from './paginas/PaginaPokemon'
 import PaginaLogin from './paginas/PaginaLogin';
 import "@fontsource/poppins";
+import PaginaRegister from './paginas/PaginaRegister';
+
 
 
 
@@ -37,6 +39,11 @@ function App() {
       <Route 
       path='/PaginaLogin'
       element={<PaginaLogin
+      />}
+      />
+      <Route
+      path='/PaginaRegister'
+      element={<PaginaRegister
       />}
       />
     </Routes>

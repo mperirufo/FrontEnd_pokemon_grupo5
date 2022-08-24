@@ -37,7 +37,8 @@ const Carta = ({pokemonType, pokemonTypes ,pokemonType2, selectedPokemonDetails,
             <p className='text-gray-600  text-sm'>Height</p>
         </div>
           <div className='flex flex-col justify-center items-center'>
-            <p className='capitalize'>{selectedPokemonDetails?.moves?.nombre}</p>
+          <p className='capitalize'>{selectedPokemonDetails.moves && selectedPokemonDetails?.moves[0]?.nombre}</p>
+            <p className='capitalize'>{selectedPokemonDetails.moves && selectedPokemonDetails?.moves[1]?.nombre}</p>
             <p className='text-gray-600 mt-[9px] text-sm'>Moves</p>
           </div>
       </div>
