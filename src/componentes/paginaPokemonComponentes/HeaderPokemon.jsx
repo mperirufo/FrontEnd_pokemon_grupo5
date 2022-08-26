@@ -2,7 +2,6 @@ import React from 'react'
 import Carta from './Carta'
 import Pokeball from '../../imagenes/Pokeball.png'
 import {Link} from 'react-router-dom'
-import PaginaPokemon from '../../paginas/PaginaPokemon'
 
 const HeaderPokemon = ({pokemonType2, pokemonType, pokemonId, pokemonTypes, name , id ,  selectedPokemonDetails, selectedPokemonText, selectedPokemonHP, selectedPokemonDEF,selectedPokemonATK,selectedPokemonSDEF,selectedPokemonSATK,selectedPokemonSPD}) => {
 
@@ -11,7 +10,7 @@ const HeaderPokemon = ({pokemonType2, pokemonType, pokemonId, pokemonTypes, name
 
   return ( 
     <div className={`flex ${pokemonType} flex-col  h-[844px] w-[390px]`}>
-     
+    
       <div className='flex mt-4 justify-around items-center text-white'>
         <Link
         to={`/ `}
@@ -27,10 +26,10 @@ const HeaderPokemon = ({pokemonType2, pokemonType, pokemonId, pokemonTypes, name
         className='opacity-5 static ml-[185px] h-[200px] w-[200px]'
         src={Pokeball} alt="" />
       </div>
-       {(pokemonId < 2) ? <Link  to={`/PaginaPokemon/${nextPokemon} `} >
+      {(pokemonId < 2) ? <Link  to={`/PaginaPokemon/${nextPokemon} `} >
           <i className="fa-solid flex  text-[25px] text-white mr-6 justify-end fa-arrow-right "></i>
           </Link>
-         : 
+        : 
         <div className='flex items-center justify-between'> 
           <Link to={`/PaginaPokemon/${previousPokemon} `} >
             <i className="fa-solid flex  text-[25px] text-white ml-6  fa-arrow-left "></i>
@@ -43,9 +42,9 @@ const HeaderPokemon = ({pokemonType2, pokemonType, pokemonId, pokemonTypes, name
       <img 
       className='flex  top-[75px]  left-0 right-0 h-[250px] m-auto w-[250px] absolute'
       
-      src={selectedPokemonDetails.datos_pokemon?.imagen} />
-       
-       <Carta
+      src={selectedPokemonDetails.datos_pokemon?.img} />
+      
+      <Carta
         pokemonType={pokemonType}
         pokemonType2={pokemonType2}
         selectedPokemonDetails={selectedPokemonDetails}
@@ -58,7 +57,7 @@ const HeaderPokemon = ({pokemonType2, pokemonType, pokemonId, pokemonTypes, name
         selectedPokemonSATK={selectedPokemonSATK}
         pokemonTypes={pokemonTypes}
         
-       />
+      />
       
     </div>
   )

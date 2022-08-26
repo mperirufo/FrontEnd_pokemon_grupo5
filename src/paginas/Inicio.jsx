@@ -56,7 +56,7 @@ const Inicio = () => {
             /> 
             {cargando && <Spinner />}
             <ListaPokemon 
-            allPokemons={allPokemons.filter((pokemon) => pokemon.nombre.match(valor))} 
+            allPokemons={allPokemons.filter((pokemon) => pokemon.name.match(valor))} 
             
             />
 

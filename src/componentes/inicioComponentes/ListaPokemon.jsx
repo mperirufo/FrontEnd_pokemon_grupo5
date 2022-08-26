@@ -15,7 +15,7 @@ const ListaPokemon = ({ allPokemons}) => {
             id={pokemons.id}
             img={pokemons.imagen}
             name={pokemons.nombre}
-             /*type={tipo.nombre}*/
+            /*type={tipo.nombre}*/
             key={index}
             pokemons={pokemons}
             />

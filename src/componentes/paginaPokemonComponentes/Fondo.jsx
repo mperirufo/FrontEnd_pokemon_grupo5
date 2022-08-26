@@ -67,7 +67,7 @@ console.log(selectedPokemonDetails)
       <div className="h-auto w-auto"> 
           
         <HeaderPokemon 
-        name={selectedPokemonDetails.nombre}
+        name={selectedPokemonDetails.name}
         pokemonTypes={pokemonTypes}
         pokemonType={pokemonType}
         pokemonType2={pokemonType2}

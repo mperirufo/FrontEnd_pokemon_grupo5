@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 function AgregarPokemon() {
   return (
-    <Link to={'/PaginaLogin'}>
+    <Link to={'/crearPokemon'}>
     <div className={`flex flex-col w-[110px] m-[5px] my-2 justify-between h-[140px]  bg-white rounded-lg border-2`}>
       <div className='w-full h-full flex'>
         <div className='flex flex-col w-full h-full justify-center '>
