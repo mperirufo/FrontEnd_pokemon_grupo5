@@ -12,52 +12,52 @@ import "@fontsource/poppins";
 
 
 
+
+
 function App() {
 
 
-  return (
-    <div className='w-full letra  m-auto h-full'>
-   <BrowserRouter>
-    <Routes>
+return (
+<div className='w-full letra  m-auto h-full'>
+<BrowserRouter>
+<Routes>
       <Route 
-       path='/'
-       element={<Start 
-       
-       />}
+      path='/'
+      element={<Start 
+      
+      />}
       />
       <Route 
-       path='/Inicio'
-       element={<Inicio 
-       
-       />}
+      path='/Inicio'
+      element={<Inicio 
+      
+      />}
       />
       <Route 
-       path='/PaginaPokemon/:id'
-       element={<PaginaPokemon
-       />}
-       />
+      path='/PaginaPokemon/:id'
+      element={<PaginaPokemon
+      />}
+      />
       <Route 
       path='/PaginaLogin'
       element={<PaginaLogin
       />}
       />
-      {<Route
+      <Route
       path='/PaginaRegister'
       element={<PaginaRegister
       />}
       />
-      }
       {<Route
       path='/CrearPokemon'
       element={<CrearPokemon
       />}
       />
       }
-      
-    </Routes>
-   </BrowserRouter>
-   </div>
-  )
+      </Routes>
+      </BrowserRouter>
+      </div>
+      )
 }
 
 export default App

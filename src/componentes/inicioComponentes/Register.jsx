@@ -96,8 +96,8 @@ return (
                         type="submit" 
                         className="btn btn-primary bg-blue-500 rounded-sm w-[5rem] lg:w-[13rem] mb-4"
                         onClick={handleSubmitClick}
-                    >Register</button>
-
+                    >Register
+                    </button>
                 </div>
                 </div>
             </form>

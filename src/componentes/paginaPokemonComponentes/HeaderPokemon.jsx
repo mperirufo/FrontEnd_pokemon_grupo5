@@ -13,13 +13,13 @@ const HeaderPokemon = ({pokemonType2, pokemonType, pokemonId, pokemonTypes, name
     
       <div className='flex mt-4 justify-around items-center text-white'>
         <Link
-        to={`/ `}
+        to={`/Inicio `}
         >
         
           <i className="fa-solid flex  text-[25px] fa-arrow-left  ml-6"></i>
         </Link>
         <p className='ml-4 font-[700] capitalize text-2xl'>{name}</p>
-        <p className='ml-[140px] font-semibold text-md'>#0{id}</p>
+        <p className='ml-[140px] font-semibold text-md'>{selectedPokemonDetails?.datos_pokemon?.id}</p>
       </div>
       <div>
         <img 
