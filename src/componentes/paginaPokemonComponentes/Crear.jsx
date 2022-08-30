@@ -56,125 +56,133 @@ function Crear() {
     
         <div className="w-full h-[100vh] bg-cover bg-center bg-[url(https://mir-s3-cdn-cf.behance.net/projects/404/999058136965003.Y3JvcCw3NDcsNTg0LDI3MywyMg.jpg)] flex flex-col items-center">
             <div className='w-full h-full flex items-center'>
-                <form className="w-3/4 justify-center items-center flex mb-64">
+                <form className="w-3/4 justify-center items-center flex">
                     <div>
                         <div>
-                        <div className="form-group text-left w-4/6 flex flex-col mb-2 ">
-                        <p htmlFor="exampleInputEmail" className='mb-2 text-white'>Nombre del pokemon</p>
-                        <div className='mb-2'>
+                        <div className="form-group text-left w-4/6 flex flex-col  ">
+                        <p htmlFor="exampleInputEmail" className=' text-white'>Nombre del pokemon</p>
+                        <div className=''>
                             <input type="email"
-                                    className="form-control mb-2 opacity-90 font-light rounded-sm lg:w-[25vw]" 
+                                    className="form-control  opacity-90 font-light rounded-sm lg:w-[25vw]" 
                                     id="email" 
                                     placeholder="" 
-                                    value={state.email}
+                                    value={state.nombre}
                                     onChange={handleChange}
                                     />
                         </div>
-                        <p htmlFor="exampleInputEmail" className='mb-2 text-white'>url imagen pokemon</p>
+                        <p htmlFor="exampleInputEmail" className=' text-white'>url imagen pokemon</p>
                         <input type="email"
-                                    className="form-control mb-2 opacity-90 font-light rounded-sm lg:w-[25vw]" 
+                                    className="form-control  opacity-90 font-light rounded-sm lg:w-[25vw]" 
                                     id="email" 
                                     placeholder="" 
-                                    value={state.email}
+                                    value={state.imagen}
                                     onChange={handleChange}
                                     />
-                        <p htmlFor="exampleInputEmail" className='mb-2 text-white'>peso</p>
+                        <p htmlFor="exampleInputEmail" className=' text-white'>peso</p>
                         <input type="email"
-                                    className="form-control mb-2 opacity-90 font-light rounded-sm lg:w-[25vw]" 
+                                    className="form-control  opacity-90 font-light rounded-sm lg:w-[25vw]" 
                                     id="email" 
                                     placeholder="" 
-                                    value={state.email}
+                                    value={state.peso}
                                     onChange={handleChange}
                                     />
-                        <p htmlFor="exampleInputEmail" className='mb-2 text-white'>altura</p>
+                        <p htmlFor="exampleInputEmail" className=' text-white'>altura</p>
                         <input type="email"
-                                    className="form-control mb-2 opacity-90 font-light rounded-sm lg:w-[25vw]" 
+                                    className="form-control  opacity-90 font-light rounded-sm lg:w-[25vw]" 
                                     id="email" 
                                     placeholder="" 
-                                    value={state.email}
+                                    value={state.altura}
                                     onChange={handleChange}
                                     />
-                        <p className='mb-2 text-white'>Descripcion</p>
+                        <p className=' text-white'>Descripcion</p>
                         <input type="usuer"
-                                    className="form-control mb-2 opacity-90 font-light rounded-sm lg:w-[25vw]" 
+                                    className="form-control  opacity-90 font-light rounded-sm lg:w-[25vw]" 
                                     id="usuer" 
                                     placeholder="" 
-                                    value={state.usuer}
+                                    value={state.descripcion}
                                     onChange={handleChange}
                                     />
-                        <p className='mb-2 text-white'>HP</p>
+                        <p className=' text-white'>HP</p>
                         <input type="usuer"
-                                    className="form-control mb-2 opacity-90 font-light rounded-sm lg:w-[25vw]" 
+                                    className="form-control  opacity-90 font-light rounded-sm lg:w-[25vw]" 
                                     id="usuer" 
                                     placeholder="" 
-                                    value={state.usuer}
+                                    value={state.hp}
                                     onChange={handleChange}
                                     />
-                        <p className='mb-2 text-white'>ATK</p>
+                        <p className=' text-white'>ATK</p>
                         <input type="usuer"
-                                    className="form-control mb-2 opacity-90 font-light rounded-sm lg:w-[25vw]" 
+                                    className="form-control  opacity-90 font-light rounded-sm lg:w-[25vw]" 
                                     id="usuer" 
                                     placeholder="" 
-                                    value={state.usuer}
+                                    value={state.atk}
                                     onChange={handleChange}
                                     />
-                        <p className='mb-2 text-white'>DEF</p>
+                        <p className=' text-white'>DEF</p>
                         <input type="usuer"
-                                    className="form-control mb-2 opacity-90 font-light rounded-sm lg:w-[25vw]" 
+                                    className="form-control  opacity-90 font-light rounded-sm lg:w-[25vw]" 
                                     id="usuer" 
                                     placeholder="" 
-                                    value={state.usuer}
+                                    value={state.def}
                                     onChange={handleChange}
                                     />
-                        <p className='mb-2 text-white'>SATK</p>
+                        <p className=' text-white'>SATK</p>
                         <input type="usuer"
-                                    className="form-control mb-2 opacity-90 font-light rounded-sm lg:w-[25vw]" 
+                                    className="form-control  opacity-90 font-light rounded-sm lg:w-[25vw]" 
                                     id="usuer" 
                                     placeholder="" 
-                                    value={state.usuer}
+                                    value={state.stak}
                                     onChange={handleChange}
                                     />
-                        <p className='mb-2 text-white'>SDEF</p>
+                        <p className=' text-white'>SDEF</p>
                         <input type="usuer"
-                                    className="form-control mb-2 opacity-90 font-light rounded-sm lg:w-[25vw]" 
+                                    className="form-control  opacity-90 font-light rounded-sm lg:w-[25vw]" 
                                     id="usuer" 
                                     placeholder="" 
-                                    value={state.usuer}
+                                    value={state.sdef}
                                     onChange={handleChange}
                                     />
-                        <p className='mb-2 text-white'>SPD</p>
+                        <p className=' text-white'>SPD</p>
                         <input type="usuer"
-                                    className="form-control mb-2 opacity-90 font-light rounded-sm lg:w-[25vw]" 
+                                    className="form-control  opacity-90 font-light rounded-sm lg:w-[25vw]" 
                                     id="usuer" 
                                     placeholder="" 
-                                    value={state.usuer}
+                                    value={state.spd}
                                     onChange={handleChange}
                                     />
-                        <p className='mb-2 text-white'>TIPO</p>
+                        <p className=' text-white'>TIPO</p>
                         <input type="usuer"
-                                    className="form-control mb-2 opacity-90 font-light rounded-sm lg:w-[25vw]" 
+                                    className="form-control  opacity-90 font-light rounded-sm lg:w-[25vw] mb-2" 
                                     id="usuer" 
                                     placeholder="" 
-                                    value={state.usuer}
+                                    value={state.tipo}
+                                    onChange={handleChange}
+                                    />
+                                                            <p className=' text-white'>TIPO 2</p>
+                        <input type="usuer"
+                                    className="form-control  opacity-90 font-light rounded-sm lg:w-[25vw] mb-2" 
+                                    id="usuer" 
+                                    placeholder="" 
+                                    value={state.tipo2}
                                     onChange={handleChange}
                                     />
                     </div>
                     
                     </div>
-                    <div className="form-group text-left flex flex-col font-bold mb-2">
+                    <div className="form-group text-left flex flex-col font-bold">
                     </div>
                     <div className="form-check">
                     </div>
                     <button 
                         type="submit" 
-                        className="btn btn-primary bg-blue-500 rounded-sm w-[5rem] lg:w-[13rem] mb-4"
+                        className="btn btn-primary bg-blue-500 rounded-sm w-[5rem] lg:w-[13rem]"
                         onClick={handleSubmitClick}
-                    >Register</button>
+                    >Add pokemon</button>
                     </div>
                 </form>
             </div>
     
-            <div className="alert alert-success mt-2" style={{display: state.successMessage ? 'block' : 'none' }} role="alert">
+            <div className="alert alert-success" style={{display: state.successMessage ? 'block' : 'none' }} role="alert">
                 {state.successMessage}
             </div>
             </div>

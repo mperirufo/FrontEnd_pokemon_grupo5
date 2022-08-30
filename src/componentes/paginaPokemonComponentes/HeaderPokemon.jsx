@@ -18,7 +18,7 @@ const HeaderPokemon = ({pokemonType2, pokemonType, pokemonId, pokemonTypes, name
         
           <i className="fa-solid flex  text-[25px] fa-arrow-left  ml-6"></i>
         </Link>
-        <p className='ml-4 font-[700] capitalize text-2xl'>{name}</p>
+        <p className='ml-4 font-[700] capitalize text-2xl'>{selectedPokemonDetails?.datos_pokemon?.nombre}</p>
         <p className='ml-[140px] font-semibold text-md'>{selectedPokemonDetails?.datos_pokemon?.id}</p>
       </div>
       <div>
@@ -42,7 +42,7 @@ const HeaderPokemon = ({pokemonType2, pokemonType, pokemonId, pokemonTypes, name
       <img 
       className='flex  top-[75px]  left-0 right-0 h-[250px] m-auto w-[250px] absolute'
       
-      src={selectedPokemonDetails.datos_pokemon?.img} />
+      src={selectedPokemonDetails.datos_pokemon?.imagen} />
       
       <Carta
         pokemonType={pokemonType}

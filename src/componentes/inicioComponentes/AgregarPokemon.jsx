@@ -1,11 +1,13 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link} from 'react-router-dom'
 
-
-
+ 
 function AgregarPokemon() {
+  console.log('token', token)
+  if (token) 
   return (
-    <Link to={'/crearPokemon'}>
+    <Link to='/CrearPokemon'>
+  <div>
     <div className={`flex flex-col w-[110px] m-[5px] my-2 justify-between h-[140px]  bg-white rounded-lg border-2`}>
       <div className='w-full h-full flex'>
         <div className='flex flex-col w-full h-full justify-center '>
@@ -15,8 +17,17 @@ function AgregarPokemon() {
     <div className='flex items-center justify-end flex-col w-full h-2/4 text-center font-bold'>
       Agregar Pokemon
     </div>
+    </div>
   </div>
   </Link>
+  )
+  else (!token)
+  return (
+    <Link to='/PaginaLogin'>
+    <div>
+      Login
+    </div>
+    </Link>
   )
 }
 
