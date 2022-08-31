@@ -1,4 +1,4 @@
-import React ,{ useState , useEffect } from 'react'
+import React ,{ useState , useEffect, useLocation } from 'react'
 import Buscador  from '../componentes/inicioComponentes/Buscador'
 import Header from '../componentes/inicioComponentes/Header'
 import ListaPokemon from '../componentes/inicioComponentes/ListaPokemon'
@@ -6,8 +6,11 @@ import Spinner from '../componentes/inicioComponentes/Spinner'
 
 
 
-const Inicio = () => {
+ /* const { state } = useLocation; */
+  /* const { tkn } = state; */
 
+
+const Inicio = () => {
   const [valor, setValor] = useState('') 
   const [cargando, setCargando] = useState(false)
   const [allPokemons, setAllPokemons] = useState([])

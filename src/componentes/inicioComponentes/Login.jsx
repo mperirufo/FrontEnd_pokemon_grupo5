@@ -1,7 +1,8 @@
 import React from 'react'
 import './Logincss.css';
 import { useState } from "react"
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate} from 'react-router-dom';
+
 
 
 function LoginForm(props) {
@@ -9,7 +10,7 @@ function LoginForm(props) {
         nombre: "",
         contrasena: ""
     })
-    let history = useNavigate()
+    let navigate = useNavigate()
 
     const handleChange = (e) => {
         const { id, value } = e.target
@@ -31,25 +32,15 @@ function LoginForm(props) {
         .catch ((er) => {
             return er
         })
-        console.log('resp', resp.token)
-        if (resp.token) {history('/Inicio')} 
-        else {history("/PaginaLogin")}
-
-        const token = resp.token
-        
-
     
+        console.log('resp', resp.token)
+        localStorage.setItem("token", resp)
+        console.log('token?', "token")
+        if (resp.token) {navigate('/Inicio')} 
+        else {navigate('/PaginaLogin')}
     }
 
 
-    const redirectToHome = () => {
-        props.updateTitle('Home')
-        props.history.push('/home');
-    }
-    const redirectToRegister = () => {
-        props.history.push('/register');
-        props.updateTitle('Register');
-    }
     return (
         <div className="w-full h-[100vh] bg-cover bg-center bg-[url(https://mir-s3-cdn-cf.behance.net/projects/404/999058136965003.Y3JvcCw3NDcsNTg0LDI3MywyMg.jpg)] flex flex-col items-center">
             <div className='w-full h-full flex items-center'>

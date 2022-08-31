@@ -18,7 +18,6 @@ const Carta = ({pokemonType, pokemonTypes ,pokemonType2, selectedPokemonDetails,
         
       </div>
       <p className={`  text${pokemonType} font-[700] mt-4`}>About</p>
-
       <div className='flex flex-row mt-2 justify-evenly w-[350px] h-auto'>
           <div className=' flex-col justify-center items-center'> 
             <div className='flex items-center'>

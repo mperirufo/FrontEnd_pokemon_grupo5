@@ -1,10 +1,15 @@
 import React from 'react'
 import { Link} from 'react-router-dom'
 
- 
-function AgregarPokemon() {
-  console.log('token', token)
-  if (token) 
+
+
+ /* const { state } = useLocation(); */
+ /* const { tkn } = state; */
+localStorage.getItem('token')
+
+function AgregarPokemon(props) {
+  console.log('token', 'token')
+  if ('token') 
   return (
     <Link to='/CrearPokemon'>
   <div>
@@ -21,7 +26,7 @@ function AgregarPokemon() {
   </div>
   </Link>
   )
-  else (!token)
+  else (!'token')
   return (
     <Link to='/PaginaLogin'>
     <div>
