@@ -5,11 +5,10 @@ import { Link} from 'react-router-dom'
 
  /* const { state } = useLocation(); */
  /* const { tkn } = state; */
-localStorage.getItem('token')
+ const token = localStorage.getItem('token')
 
 function AgregarPokemon(props) {
   console.log('token', 'token')
-  if ('token') 
   return (
     <Link to='/CrearPokemon'>
   <div>
@@ -25,14 +24,6 @@ function AgregarPokemon(props) {
     </div>
   </div>
   </Link>
-  )
-  else (!'token')
-  return (
-    <Link to='/PaginaLogin'>
-    <div>
-      Login
-    </div>
-    </Link>
   )
 }
 

@@ -6,21 +6,21 @@ import { Link, useNavigate} from 'react-router-dom';
 
 
 function LoginForm(props) {
-    const [state, setState] = useState({
+      const [state, setState] = useState({
         nombre: "",
         contrasena: ""
-    })
-    let navigate = useNavigate()
+      })
+      let navigate = useNavigate()
 
-    const handleChange = (e) => {
+       const handleChange = (e) => {
         const { id, value } = e.target
         setState(prevState => ({
             ...prevState,
             [id]: value
         }))
-    }
+      }
 
-    const handleSubmitClick = async (e) => {
+         const handleSubmitClick = async (e) => {
         const payload = {
             nombre: state.nombre,
             contrasena: state.contrasena,
@@ -34,9 +34,8 @@ function LoginForm(props) {
         })
     
         console.log('resp', resp.token)
-        localStorage.setItem("token", resp)
-        console.log('token?', "token")
-        if (resp.token) {navigate('/Inicio')} 
+        if 
+        (resp.token) {localStorage.setItem("token", resp.token); navigate('/Inicio', {state: resp.token})} 
         else {navigate('/PaginaLogin')}
     }
 
